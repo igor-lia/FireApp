@@ -33,6 +33,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Snu-qa-4vz" id="pZG-ia-5mB"/>
+                                    <outlet property="delegate" destination="Snu-qa-4vz" id="aQv-BQ-O8Y"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x6k-pc-bAs"/>
@@ -45,17 +49,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FireApp" id="12Q-sQ-V9J">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="J6i-F7-FK4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="J6i-F7-FK4">
+                            <connections>
+                                <action selector="addTap:" destination="Snu-qa-4vz" id="G5Y-Ah-o6T"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="lcE-wg-8js" id="O4N-uL-JOs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svc-SV-61k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1463.768115942029" y="2.6785714285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FireApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FireApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +124,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
+                                                    <action selector="loginTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbL-SX-KvJ"/>
                                                     <segue destination="Qvy-XB-wcX" kind="presentation" identifier="fireSegue" modalPresentationStyle="fullScreen" id="LZW-rI-dki"/>
                                                 </connections>
                                             </button>
@@ -124,6 +136,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Register">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="registerTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qeD-qb-nEd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -151,6 +166,11 @@
                             <constraint firstItem="OQY-rG-6Kf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x2b-ev-ksQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTexField" destination="ap8-6r-GRD" id="98x-aq-Jr0"/>
+                        <outlet property="passwordTextField" destination="e1S-4E-8LM" id="sMF-8N-8w6"/>
+                        <outlet property="warningLabel" destination="bzz-hd-uXl" id="Dop-JX-413"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
