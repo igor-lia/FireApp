@@ -49,6 +49,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FireApp" id="12Q-sQ-V9J">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="AXv-h9-zBP">
+                            <connections>
+                                <action selector="singOutTap:" destination="Snu-qa-4vz" id="yVa-IK-V6z"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="J6i-F7-FK4">
                             <connections>
                                 <action selector="addTap:" destination="Snu-qa-4vz" id="G5Y-Ah-o6T"/>
@@ -125,7 +130,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="loginTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbL-SX-KvJ"/>
-                                                    <segue destination="Qvy-XB-wcX" kind="presentation" identifier="fireSegue" modalPresentationStyle="fullScreen" id="LZW-rI-dki"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxm-9H-JjP">
@@ -171,6 +175,7 @@
                         <outlet property="emailTexField" destination="ap8-6r-GRD" id="98x-aq-Jr0"/>
                         <outlet property="passwordTextField" destination="e1S-4E-8LM" id="sMF-8N-8w6"/>
                         <outlet property="warningLabel" destination="bzz-hd-uXl" id="Dop-JX-413"/>
+                        <segue destination="Qvy-XB-wcX" kind="presentation" identifier="fireSegue" modalPresentationStyle="fullScreen" id="pLW-9x-cBM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
