@@ -14,9 +14,12 @@
 		9D22966E2951EC1B003CEA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D22966D2951EC1B003CEA7A /* Assets.xcassets */; };
 		9D2296712951EC1B003CEA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D22966F2951EC1B003CEA7A /* LaunchScreen.storyboard */; };
 		9DB532362951F899004E5691 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB532352951F899004E5691 /* TasksViewController.swift */; };
+		9DB5323A29530FE4004E5691 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB5323929530FE4004E5691 /* GoogleService-Info.plist */; };
+		F430780A050BB7D96B20615D /* Pods_FireApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0BA9F89A8FA182DA54EF09 /* Pods_FireApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F0BA9F89A8FA182DA54EF09 /* Pods_FireApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2296612951EC1A003CEA7A /* FireApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2296642951EC1A003CEA7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2296662951EC1A003CEA7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		9D2296702951EC1B003CEA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2296722951EC1B003CEA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DB532352951F899004E5691 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		9DB5323929530FE4004E5691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB4724057AD80268CFF297BF /* Pods-FireApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireApp.release.xcconfig"; path = "Target Support Files/Pods-FireApp/Pods-FireApp.release.xcconfig"; sourceTree = "<group>"; };
+		E0D168C9C5593FDED2B567E8 /* Pods-FireApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireApp.debug.xcconfig"; path = "Target Support Files/Pods-FireApp/Pods-FireApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F430780A050BB7D96B20615D /* Pods_FireApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				9D2296632951EC1A003CEA7A /* FireApp */,
 				9D2296622951EC1A003CEA7A /* Products */,
+				9F17E8D4E9D06A696DDA7444 /* Pods */,
+				AAEF85B735BC8972724A1AA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +82,7 @@
 				9D22966D2951EC1B003CEA7A /* Assets.xcassets */,
 				9D22966F2951EC1B003CEA7A /* LaunchScreen.storyboard */,
 				9D2296722951EC1B003CEA7A /* Info.plist */,
+				9DB5323929530FE4004E5691 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -86,6 +96,23 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		9F17E8D4E9D06A696DDA7444 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0D168C9C5593FDED2B567E8 /* Pods-FireApp.debug.xcconfig */,
+				BB4724057AD80268CFF297BF /* Pods-FireApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AAEF85B735BC8972724A1AA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F0BA9F89A8FA182DA54EF09 /* Pods_FireApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D2296752951EC1B003CEA7A /* Build configuration list for PBXNativeTarget "FireApp" */;
 			buildPhases = (
+				8B61BD09682CF298ACF0FC69 /* [CP] Check Pods Manifest.lock */,
 				9D22965D2951EC1A003CEA7A /* Sources */,
 				9D22965E2951EC1A003CEA7A /* Frameworks */,
 				9D22965F2951EC1A003CEA7A /* Resources */,
+				E576093922ABAEAFB2B2F5B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,12 +174,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2296712951EC1B003CEA7A /* LaunchScreen.storyboard in Resources */,
+				9DB5323A29530FE4004E5691 /* GoogleService-Info.plist in Resources */,
 				9D22966E2951EC1B003CEA7A /* Assets.xcassets in Resources */,
 				9D22966C2951EC1A003CEA7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B61BD09682CF298ACF0FC69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E576093922ABAEAFB2B2F5B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FireApp/Pods-FireApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FireApp/Pods-FireApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FireApp/Pods-FireApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D22965D2951EC1A003CEA7A /* Sources */ = {
@@ -302,6 +374,7 @@
 		};
 		9D2296762951EC1B003CEA7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0D168C9C5593FDED2B567E8 /* Pods-FireApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,8 +386,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,6 +407,7 @@
 		};
 		9D2296772951EC1B003CEA7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4724057AD80268CFF297BF /* Pods-FireApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -345,8 +419,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

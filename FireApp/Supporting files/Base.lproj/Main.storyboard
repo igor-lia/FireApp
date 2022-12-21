@@ -67,7 +67,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FireApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -166,6 +166,7 @@
                             <constraint firstItem="OQY-rG-6Kf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x2b-ev-ksQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uwR-H9-mRs"/>
                     <connections>
                         <outlet property="emailTexField" destination="ap8-6r-GRD" id="98x-aq-Jr0"/>
                         <outlet property="passwordTextField" destination="e1S-4E-8LM" id="sMF-8N-8w6"/>
